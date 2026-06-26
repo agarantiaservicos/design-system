@@ -1,0 +1,44 @@
+/* ============================================================
+   AGarantia — Effects: sombras, gradientes, blur, transições
+   Sombras leves; gradiente assinatura é o ativo gráfico mais forte.
+   ============================================================ */
+:root {
+  /* ---- Sombras (suaves, fintech) ---- */
+  --shadow-xs: 0 1px 2px rgba(21,49,79,0.05);
+  --shadow-sm: 0 2px 8px rgba(21,49,79,0.06);
+  --shadow-md: 0 8px 24px rgba(21,49,79,0.08);
+  --shadow-lg: 0 18px 48px rgba(21,49,79,0.12);
+  --shadow-card: 0 12px 32px rgba(21,49,79,0.07);
+  --shadow-brand: 0 12px 28px rgba(122,184,41,0.28);   /* glow verde sob CTAs */
+  --shadow-dark: 0 24px 60px rgba(0,40,48,0.35);
+
+  /* ---- Gradiente assinatura (vertical Branco → Teal → Verde) ---- */
+  --gradient-signature: linear-gradient(180deg, #F4F7F6 0%, #0D7682 48%, #7AB829 100%); /* @kind color */
+  --gradient-signature-diagonal: linear-gradient(160deg, #F4F7F6 0%, #0D7682 50%, #7AB829 100%); /* @kind color */
+
+  /* Seções escuras (Teal → Petróleo) */
+  --gradient-dark: linear-gradient(160deg, #0D7682 0%, #003844 100%); /* @kind color */
+  --gradient-petroleo: linear-gradient(165deg, #0A5763 0%, #003844 70%); /* @kind color */
+
+  /* Botões / cartões de ação (verde) */
+  --gradient-verde: linear-gradient(160deg, #8CC63F 0%, #5B9E1F 100%); /* @kind color */
+  --gradient-verde-vibrante: linear-gradient(160deg, #2FE07A 0%, #00B84E 100%); /* @kind color */
+
+  /* Hero claro: brilho verde sutil em fundo off-white (como o site) */
+  --gradient-hero-light: radial-gradient(1100px 520px at 8% -10%, rgba(122,184,41,0.18) 0%, rgba(13,118,130,0.06) 35%, rgba(244,247,246,0) 70%); /* @kind color */
+
+  /* Cartão de vidro sobre fundo escuro */
+  --surface-glass: rgba(255,255,255,0.06);
+  --surface-glass-border: rgba(255,255,255,0.12);
+
+  /* ---- Blur ---- */
+  --blur-card: 14px; /* @kind other */
+
+  /* ---- Transições / easing ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --dur-fast: 140ms; /* @kind other */
+  --dur-base: 220ms; /* @kind other */
+  --dur-slow: 360ms; /* @kind other */
+  --transition-base: all var(--dur-base) var(--ease-out); /* @kind other */
+}

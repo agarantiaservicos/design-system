@@ -1,0 +1,88 @@
+/* ============================================================
+   AGarantia — Color System
+   3 camadas: primárias · secundárias (digitais) · neutros + apoio
+   Regra 60/30/10 — 60% neutros · 30% primárias · 10% acentos
+   ============================================================ */
+:root {
+  /* ---- Primárias (a alma da marca) ---- */
+  --ag-verde: #7AB829;          /* Verde Garantia — cor-assinatura, cadeado, CTAs, ícones */
+  --ag-navy: #15314F;           /* Azul Confiança — wordmark, títulos, textos, institucional */
+
+  /* ---- Secundárias (sistema digital) ---- */
+  --ag-verde-vibrante: #00D65C; /* highlights neon, badges de sucesso, acentos de alta energia */
+  --ag-petroleo: #003844;       /* fundos de seção escura, rodapé, blocos de profundidade */
+  --ag-teal: #0D7682;           /* meio do gradiente, cartões, gráficos, detalhes */
+
+  /* ---- Apoio / atenção (uso pontual, nunca dominante) ---- */
+  --ag-ambar: #F5B400;          /* estrelas/avaliações, avisos, dado de destaque */
+
+  /* ---- Neutros ---- */
+  --ag-white: #FFFFFF;
+  --ag-offwhite: #F4F7F6;       /* fundo de página, seções claras */
+  --ag-cinza-claro: #E3E8E9;    /* linhas, bordas, divisores */
+  --ag-cinza-medio: #8FA0A2;    /* textos auxiliares, legendas, ícones inativos */
+  --ag-grafite: #2A3B45;        /* texto de corpo alternativo ao navy */
+
+  /* ---- Escala de verde (derivada, para estados/superfícies) ---- */
+  --ag-verde-700: #5B9E1F;      /* hover/press de botões verdes */
+  --ag-verde-600: #6BAB24;
+  --ag-verde-500: #7AB829;      /* = base */
+  --ag-verde-300: #A8D46A;
+  --ag-verde-100: #E8F3D8;      /* chips/superfícies suaves */
+  --ag-verde-050: #F2F8E9;
+
+  /* ---- Escala navy/petróleo ---- */
+  --ag-navy-900: #0C2236;
+  --ag-navy-700: #15314F;       /* = base */
+  --ag-navy-500: #2A4A6B;
+  --ag-navy-300: #5A748F;
+  --ag-petroleo-900: #002730;
+  --ag-petroleo-700: #003844;   /* = base */
+  --ag-petroleo-500: #0D7682;   /* = teal */
+
+  /* ============================================================
+     ALIASES SEMÂNTICOS — use estes na UI, não os tokens crus
+     ============================================================ */
+
+  /* Texto */
+  --text-strong: var(--ag-navy);        /* títulos, headlines */
+  --text-body: var(--ag-grafite);       /* corpo, parágrafos */
+  --text-muted: var(--ag-cinza-medio);  /* legendas, captions */
+  --text-accent: var(--ag-verde);       /* palavra-chave verde em títulos */
+  --text-on-dark: var(--ag-white);      /* texto sobre petróleo/navy */
+  --text-on-dark-muted: rgba(255,255,255,0.72);
+  --text-on-brand: var(--ag-navy);      /* texto sobre verde (contraste) */
+  --text-link: var(--ag-teal);
+
+  /* Superfícies */
+  --surface-page: var(--ag-offwhite);
+  --surface-card: var(--ag-white);
+  --surface-soft: var(--ag-verde-050);
+  --surface-dark: var(--ag-petroleo);
+  --surface-dark-alt: var(--ag-navy);
+  --surface-brand: var(--ag-verde);
+  --surface-teal: var(--ag-teal);
+
+  /* Bordas */
+  --border-subtle: var(--ag-cinza-claro);
+  --border-soft: #EDF1F1;
+  --border-on-dark: rgba(255,255,255,0.12);
+
+  /* Ação / CTA */
+  --action-bg: var(--ag-verde);
+  --action-bg-hover: var(--ag-verde-700);
+  --action-fg: var(--ag-white);
+  --action-ghost-fg: var(--ag-navy);
+
+  /* Estados semânticos */
+  --success: var(--ag-verde-vibrante);
+  --success-soft: var(--ag-verde-100);
+  --warning: var(--ag-ambar);
+  --warning-soft: #FDF1CF;
+  --info: var(--ag-teal);
+  --danger: #E0432F;
+  --danger-soft: #FBE3DF;
+
+  /* Foco */
+  --focus-ring: rgba(122,184,41,0.45);
+}

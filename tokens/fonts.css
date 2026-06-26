@@ -1,0 +1,6 @@
+/* AGarantia — Webfonts
+   Títulos/Display: Poppins (SemiBold/Bold)
+   Corpo/Texto: Inter (Regular/Medium)
+   Both are the official system fonts per the brand manual.
+   Loaded from Google Fonts so consumers get them with one stylesheet link. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
